@@ -15,10 +15,19 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="25HxTGBzvIFNkY8hau0wLcQPgTY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="false" />
@@ -207,8 +216,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.Python tests for test_decorators.TestDecorators" />
-        <item itemvalue="Python tests.Python tests for test_decorators.TestDecorators.test_as_binding_message_command" />
         <item itemvalue="Python tests.Python tests for test_decorators.TestDecorators.test_as_message_command_group" />
+        <item itemvalue="Python tests.Python tests for test_decorators.TestDecorators.test_as_binding_message_command" />
         <item itemvalue="Python tests.Python tests for test_decorators.TestDecorators.test_as_binding_slash_command" />
         <item itemvalue="Python tests.Python tests for test_components.TestBindingMessageCommandGroup" />
       </list>
@@ -224,5 +233,16 @@
       <updated>1645197819571</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
