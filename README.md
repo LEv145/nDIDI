@@ -5,7 +5,7 @@
 No hard:3
 ```py
 ...
-from components import TestComponent  # 
+from components import TestComponent
 
 
 def main() -> None:
