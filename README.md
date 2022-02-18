@@ -1,5 +1,11 @@
 # nDIDI (No Dynamic Import Dependency Injection)
 
+## Install
+
+```
+pip install git+https://github.com/LEv145/nDIDI.git
+```
+
 ## How to use
 
 No hard:3
