@@ -1,13 +1,13 @@
 [tool.poetry]
 name = "nDIDI"
-version = "1.0.0b1"
+version = "1.0.0b2"
 description = "No Dynamic Import Dependency Injection"
 authors = ["LEv145"]
 
 [tool.poetry.dependencies]
 python = ">=3.9.0,<3.11"
 hikari-tanjun = "^2.4.0-alpha.1"
-hikari = "^2.0.0-alpha.106"
+hikari = "*"
 
 [tool.poetry.dev-dependencies]
 mkinit = "^0.3.4"
