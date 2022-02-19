@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "nDIDI"
-version = "1.0.0b"
+version = "1.0.0b1"
 description = ""
 authors = ["LEv145"]
 
