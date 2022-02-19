@@ -9,7 +9,7 @@ import tanjun
 class BaseComponent(tanjun.Component):
     __slots__ = ()
 
-    def load_commands(self, cls: typing.Any | None = None):
+    def load_commands(self, cls: typing.Any | None = None) -> None:
         if cls is None:
             cls = self
 

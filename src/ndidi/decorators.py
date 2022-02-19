@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import typing
 
 import tanjun
@@ -6,6 +8,22 @@ from .binding_commands import (
     BindingSlashCommand,
     BindingMessageCommand,
     BindingMessageCommandGroup,
+)
+
+
+CallbackType = typing.Callable[..., typing.Awaitable[None]]
+ABCCommandsType = typing.Union[
+    tanjun.abc.MenuCommand[CallbackType, typing.Any],
+    tanjun.abc.MessageCommand[CallbackType],
+    tanjun.abc.SlashCommand[CallbackType],
+]
+DecoratorCallbackType = typing.Union[ABCCommandsType, CallbackType]
+
+
+ABCCommandsClasses = (
+    tanjun.abc.MenuCommand,
+    tanjun.abc.MessageCommand,
+    tanjun.abc.SlashCommand,
 )
 
 
@@ -19,12 +37,9 @@ def as_binding_slash_command(
     is_global: bool = True,
     sort_options: bool = True,
     **kwargs: typing.Any,
-):
-    def decorator(callback):
-        if isinstance(
-            callback,
-            (tanjun.abc.MenuCommand, tanjun.abc.MessageCommand, tanjun.abc.SlashCommand)
-        ):
+) -> typing.Callable[[DecoratorCallbackType], BindingSlashCommand[CallbackType]]:
+    def decorator(callback: DecoratorCallbackType):
+        if isinstance(callback, ABCCommandsClasses):
             return BindingSlashCommand(
                 callback.callback,
                 name,
@@ -57,12 +72,9 @@ def as_binding_message_command(
     name: str,
     *names: str,
     **kwargs: typing.Any,
-):
-    def decorator(callback):
-        if isinstance(
-            callback,
-            (tanjun.abc.MenuCommand, tanjun.abc.MessageCommand, tanjun.abc.SlashCommand)
-        ):
+) -> typing.Callable[[DecoratorCallbackType], BindingMessageCommand[CallbackType]]:
+    def decorator(callback: DecoratorCallbackType):
+        if isinstance(callback, ABCCommandsClasses):
             return BindingMessageCommand(
                 callback.callback,
                 name,
@@ -80,12 +92,9 @@ def as_binding_message_command_group(
     *names: str,
     strict: bool = False,
     **kwargs: typing.Any,
-):
-    def decorator(callback):
-        if isinstance(
-            callback,
-            (tanjun.abc.MenuCommand, tanjun.abc.MessageCommand, tanjun.abc.SlashCommand)
-        ):
+) -> typing.Callable[[DecoratorCallbackType], BindingMessageCommandGroup[CallbackType]]:
+    def decorator(callback: DecoratorCallbackType):
+        if isinstance(callback, ABCCommandsClasses):
             return BindingMessageCommandGroup(
                 callback.callback,
                 name,

@@ -8,6 +8,7 @@ from src.ndidi.decorators import (
     as_binding_slash_command,
     as_binding_message_command,
     as_binding_message_command_group,
+    ABCCommandsClasses,
 )
 from src.ndidi.binding_commands import (
     BindingSlashCommand,
@@ -44,11 +45,7 @@ class TestDecorators(unittest.TestCase):
         self.assertFalse(command._builder._sort_options)
 
         # Test with abc command classes
-        for abc_command_class in (
-            tanjun.abc.MenuCommand,
-            tanjun.abc.MessageCommand,
-            tanjun.abc.SlashCommand,
-        ):
+        for abc_command_class in ABCCommandsClasses:
             abc_command_class_mock = Mock(spec=abc_command_class)
 
             command = as_binding_slash_command(
@@ -91,11 +88,7 @@ class TestDecorators(unittest.TestCase):
         self.assertEqual(command.names, ["test_name1", "test_name2"])
 
         # Test with abc command classes
-        for abc_command_class in (
-            tanjun.abc.MenuCommand,
-            tanjun.abc.MessageCommand,
-            tanjun.abc.SlashCommand,
-        ):
+        for abc_command_class in ABCCommandsClasses:
             abc_command_class_mock = Mock(spec=abc_command_class)
 
             command = as_binding_message_command(
@@ -128,11 +121,7 @@ class TestDecorators(unittest.TestCase):
         self.assertTrue(command.is_strict)
 
         # Test with abc command classes
-        for abc_command_class in (
-            tanjun.abc.MenuCommand,
-            tanjun.abc.MessageCommand,
-            tanjun.abc.SlashCommand,
-        ):
+        for abc_command_class in ABCCommandsClasses:
             abc_command_class_mock = Mock(spec=abc_command_class)
 
             command = as_binding_message_command_group(

@@ -1,10 +1,7 @@
 import unittest
 from unittest.mock import Mock
 
-import tanjun
-
 from src.ndidi.binding_commands import (
-    CommandProtocol,
     BindingCommandMixin,
     BindingSlashCommand,
     BindingMessageCommand,
