@@ -6,7 +6,7 @@ import typing
 import tanjun
 
 
-class AutoComponent(tanjun.Component):
+class BaseComponent(tanjun.Component):
     __slots__ = ()
 
     def load_commands(self, cls: typing.Any | None = None):

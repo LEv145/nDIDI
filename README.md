@@ -22,7 +22,7 @@ And now we provide complete independence of the client from the component!
 ## What are the advantages? OwO
 
 * Easy to use
-
+* Changing component properties from the main file (Component name and other)
 * We have completely independent entities
 Before loading the component, now you don't need to depend on the fact that we have implemented dependencies in the client
 ```py
@@ -36,11 +36,12 @@ MissingDependencyError: ...
 * Encapsulation of component 
 The data is linked into a single object!
 And inside the object, you can transmit any data
+
 ```py
-class TestComponent(ndidi.AutoComponent):
+class TestComponent(ndidi.BaseComponent):
     def __init__(self, client: ABCClient) -> None:
         self._client = client
-    
+
     @ndidi.as_slash_command("work", "command")
     async def work(self, ctx: tanjun.abc.MessageContext) -> None:
         await ctx.respond(self._client.work())

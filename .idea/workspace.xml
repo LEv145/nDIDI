@@ -15,10 +15,16 @@
       </list>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/tests/ndidi/unit/test_decorators.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/examples/example_bot/src/__main__.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/ndidi/decorators.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="25HxTGBzvIFNkY8hau0wLcQPgTY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="false" />
@@ -27,6 +33,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -34,8 +41,8 @@
       <recent name="$PROJECT_DIR$/tests/ndidi/unit" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_decorators.TestDecorators">
-    <configuration name="Python tests for test_components.TestBindingMessageCommandGroup" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests for test_decorators.TestDecorators.test_as_message_command_group">
+    <configuration name="Python tests for test_components.TestBindingCommandMixin.test_is_bonded" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="nDIDI" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -55,11 +62,11 @@
         </ENTRIES>
       </EXTENSION>
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_components.TestBindingMessageCommandGroup&quot;" />
+      <option name="_new_target" value="&quot;test_components.TestBindingCommandMixin.test_is_bonded&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_decorators.TestDecorators" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_components.TestBindingCommandMixin.test_load_into_component" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="nDIDI" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -79,7 +86,7 @@
         </ENTRIES>
       </EXTENSION>
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_decorators.TestDecorators&quot;" />
+      <option name="_new_target" value="&quot;test_components.TestBindingCommandMixin.test_load_into_component&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -206,11 +213,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_decorators.TestDecorators" />
-        <item itemvalue="Python tests.Python tests for test_decorators.TestDecorators.test_as_binding_message_command" />
         <item itemvalue="Python tests.Python tests for test_decorators.TestDecorators.test_as_message_command_group" />
+        <item itemvalue="Python tests.Python tests for test_decorators.TestDecorators.test_as_binding_message_command" />
         <item itemvalue="Python tests.Python tests for test_decorators.TestDecorators.test_as_binding_slash_command" />
-        <item itemvalue="Python tests.Python tests for test_components.TestBindingMessageCommandGroup" />
+        <item itemvalue="Python tests.Python tests for test_components.TestBindingCommandMixin.test_is_bonded" />
+        <item itemvalue="Python tests.Python tests for test_components.TestBindingCommandMixin.test_load_into_component" />
       </list>
     </recent_temporary>
   </component>

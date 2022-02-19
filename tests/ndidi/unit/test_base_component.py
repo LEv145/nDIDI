@@ -1,8 +1,8 @@
 import unittest
 from unittest.mock import Mock
 
-from src.ndidi.auto_component import AutoComponent
-from src.ndidi.components import (
+from src.ndidi.base_component import BaseComponent
+from src.ndidi.binding_commands import (
     BindingMessageCommandGroup,
     BindingSlashCommand,
     BindingMessageCommand,
@@ -11,7 +11,7 @@ from src.ndidi.components import (
 
 class TestAutoComponent(unittest.IsolatedAsyncioTestCase):
     def setUp(self) -> None:
-        self._auto_component = AutoComponent()
+        self._auto_component = BaseComponent()
 
     def test_load_commands(self):
         # Test with `cls`
@@ -41,7 +41,7 @@ class TestAutoComponent(unittest.IsolatedAsyncioTestCase):
 
         type(
             "TestComponent",
-            (AutoComponent,),
+            (BaseComponent,),
             {
                 "test_slash_command": test_slash_command,
                 "test_message_command": test_message_command,
